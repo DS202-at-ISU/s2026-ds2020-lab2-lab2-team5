@@ -111,7 +111,18 @@ Nina:
 
 
 
-Sarah
+Sarah: 
+```{r}
+range(ames$YearBuilt, na.rm=TRUE)
+```
+The range is from 0, due to NA values, to 2022.
+```{r}
+hist(ames$YearBuilt)
+```
+
+```{r}
+plot(x=ames$YearBuilt, y=ames$`Sale Price`)
+```
 
 
 

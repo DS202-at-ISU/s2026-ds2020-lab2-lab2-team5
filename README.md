@@ -148,4 +148,24 @@ Logan:
 
 Nina:
 
-Sarah
+Sarah:
+
+``` r
+range(ames$YearBuilt, na.rm=TRUE)
+```
+
+    ## [1]    0 2022
+
+The range is from 0, due to NA values, to 2022.
+
+``` r
+hist(ames$YearBuilt)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
+``` r
+plot(x=ames$YearBuilt, y=ames$`Sale Price`)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
