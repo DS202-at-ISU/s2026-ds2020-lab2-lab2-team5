@@ -20,24 +20,114 @@ Submit a link to your repository on Canvas (only one submission per team) to sig
 
 
 step 1 result)
+```{r}
+library(classdata)
+head(ames)
+```
+```{r}
+summary(ames)
+```
+```{r}
+colnames(ames)
+```
 
-As a team, we found that:
+
+As a team, we found that: The variables in the dataset Parcel ID, Address, Style,             Occupancy, Sale Date, Sale Price, Multi Sale, YearBuilt, Acres, TotalLivingArea, Bedrooms, FinishedBsmtArea, LotArea, AC, FirePlace, Neighborhood. Variable types are int for many of the variables, boolean for things like FirePlace, and string for variables like address.The range can be seen in the summary block but the main vairable sale price goes from 0 to 20500000.    
 
 
 step 2 result)
 
+
+
+
+
+
+
+
+
+
 As a team, we found that:
+
+
+
+
+
+
+
+
+
+
+
+
 
 step 3 result)
 
+
+
+
+
+
+
+
+
+
+
+
+
 As a team, we found that:
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 step 4 result)
 
+
+
+
+
+
 Jensen:
+
+
+
+
+
+
 
 Logan:
 
+
+
+
+
+
+
 Nina:
 
+
+
+
+
+
+
+
 Sarah
+
+
+
+
+
+
+
+
+
