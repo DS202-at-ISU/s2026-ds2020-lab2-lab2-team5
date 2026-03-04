@@ -184,6 +184,50 @@ because the data is dispersed.
 
 Logan:
 
+``` r
+summary(ames$`LotArea(sf)`)
+```
+
+    ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+    ##       0    6553    9575   11466   12088  523228      89
+
+The range of the the lot area is 0 sqaure feet to 523228 square feet.
+There is also 89 homes with no lot area information.
+
+``` r
+library(ggplot2)
+ggplot(ames, aes (x = `LotArea(sf)`, y = `Sale Price`)) + geom_point()
+```
+
+    ## Warning: Removed 89 rows containing missing values or values outside the scale range
+    ## (`geom_point()`).
+
+![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- --> The lot size
+has a relationship that looks like a flat line. The outliers are so
+massive that it is hard to see a change in the sale price based on the
+change in lot area. This variable does not explain the oddities in step
+3 because the oddities are still present.
+
 Nina:
 
-Sarah
+Sarah:
+
+``` r
+range(ames$YearBuilt, na.rm=TRUE)
+```
+
+    ## [1]    0 2022
+
+The range is from 0, due to NA values, to 2022.
+
+``` r
+hist(ames$YearBuilt)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
+``` r
+plot(x=ames$YearBuilt, y=ames$`Sale Price`)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
