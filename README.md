@@ -119,7 +119,8 @@ vairable sale price goes from 0 to 20500000.
 
 step 2 result)
 
-As a team, we found that:
+Our variable of interest, or main variable, is Sale Price. We expect
+almost every variable is going to have a relationship with Sale Price.
 
 step 3 result)
 

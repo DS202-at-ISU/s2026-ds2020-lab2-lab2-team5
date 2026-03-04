@@ -47,16 +47,6 @@ Our variable of interest, or main variable, is Sale Price. We expect almost ever
 
 
 
-As a team, we found that:
-
-
-
-
-
-
-
-
-
 
 
 
