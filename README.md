@@ -202,7 +202,7 @@ ggplot(ames, aes (x = `LotArea(sf)`, y = `Sale Price`)) + geom_point()
     ## Warning: Removed 89 rows containing missing values or values outside the scale range
     ## (`geom_point()`).
 
-![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- --> The lot size
+![](README_files/figure-gfm/unnamed-chunk-9-1.png)<!-- --> The lot size
 has a relationship that looks like a flat line. The outliers are so
 massive that it is hard to see a change in the sale price based on the
 change in lot area. This variable does not explain the oddities in step
@@ -224,10 +224,10 @@ The range is from 0, due to NA values, to 2022.
 hist(ames$YearBuilt)
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
 ``` r
 plot(x=ames$YearBuilt, y=ames$`Sale Price`)
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
