@@ -1,8 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit the README.Rmd file -->
 
-library(ggplot2) library(dplyr)
-
 # Lab report \#1
 
 Follow the instructions posted at
@@ -150,6 +148,45 @@ step 4 result)
 
 Jensen:
 
+``` r
+range(ames$`TotalLivingArea (sf)`, na.rm = TRUE)
+```
+
+    ## [1]    0 6007
+
+``` r
+hist(ames$`TotalLivingArea (sf)`)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-6-1.png)<!-- --> The range of
+TotalLivingArea is (without cleaning) 6007. The largest value is 6007
+and the smallest 0.
+
+Our histogram shows the distribution of TotalLivingArea to have an
+average of ~1500, with a lower frequency for LivingArea above 3000.
+
+``` r
+library(ggplot2)
+```
+
+    ## Warning: package 'ggplot2' was built under R version 4.5.2
+
+``` r
+ggplot(ames, aes(x=`TotalLivingArea (sf)`, y=`Sale Price`)) +
+  geom_point()
+```
+
+    ## Warning: Removed 447 rows containing missing values or values outside the scale range
+    ## (`geom_point()`).
+
+![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- --> The
+scatterplot between TotalLivingArea and SalePrice is what I expected due
+to the number of other factors that relate to SalePrice. There is little
+to no relationship between TotalLivingArea and SalePrice. A home might
+have a larger TotalLivingArea but be in a worse area, causing the price
+to be similar to others. This doesn’t explain the oddities we saw in (3)
+because the data is dispersed.
+
 Logan:
 
 Nina:
@@ -159,5 +196,10 @@ range(ames$`Bedrooms`, na.rm=TRUE)
 ```
 
     ## [1]  0 10
+
+library(ggplot2) hist(ames$Bedrooms)
+#The range is from 0 to 10 for Bedrooms in homes. The majority is between 2-4 Bedrooms.
+boxplot(ames$Bedrooms) \#The pattern varies largely but is primarily
+between 2-5 with outliers between 1 and 10.
 
 Sarah
