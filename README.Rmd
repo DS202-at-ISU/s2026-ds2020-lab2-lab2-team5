@@ -37,6 +37,7 @@ As a team, we found that: The variables in the dataset Parcel ID, Address, Style
 
 step 2 result)
 
+Our variable of interest, or main variable, is Sale Price. We expect almost every variable is going to have a relationship with Sale Price.
 
 
 
