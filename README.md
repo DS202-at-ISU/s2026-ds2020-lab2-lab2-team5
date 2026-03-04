@@ -138,7 +138,11 @@ hist(ames$`Sale Price`)
 
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
-As a team, we found that:
+As a team, we found that: There is an extreme number of homes on the
+lower end of the sale price range, with a smaller number of homes with a
+larger sale price. This follows with what we see in ames with most of
+the homes being similar, with a small amount of them being much larger
+than others.
 
 step 4 result)
 
