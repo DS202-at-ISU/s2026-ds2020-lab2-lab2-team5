@@ -138,13 +138,41 @@ hist(ames$`Sale Price`)
 
 ![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
-As a team, we found that:
+As a team, we found that: There is an extreme number of homes on the
+lower end of the sale price range, with a smaller number of homes with a
+larger sale price. This follows with what we see in ames with most of
+the homes being similar, with a small amount of them being much larger
+than others.
 
 step 4 result)
 
 Jensen:
 
 Logan:
+
+``` r
+summary(ames$`LotArea(sf)`)
+```
+
+    ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+    ##       0    6553    9575   11466   12088  523228      89
+
+The range of the the lot area is 0 sqaure feet to 523228 square feet.
+There is also 89 homes with no lot area information.
+
+``` r
+library(ggplot2)
+ggplot(ames, aes (x = `LotArea(sf)`, y = `Sale Price`)) + geom_point()
+```
+
+    ## Warning: Removed 89 rows containing missing values or values outside the scale range
+    ## (`geom_point()`).
+
+![](README_files/figure-gfm/unnamed-chunk-7-1.png)<!-- --> The lot size
+has a relationship that looks like a flat line. The outliers are so
+massive that it is hard to see a change in the sale price based on the
+change in lot area. This variable does not explain the oddities in step
+3 because the oddities are still present.
 
 Nina:
 
