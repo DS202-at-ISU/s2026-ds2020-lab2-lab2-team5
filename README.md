@@ -124,6 +124,20 @@ almost every variable is going to have a relationship with Sale Price.
 
 step 3 result)
 
+``` r
+range(ames$`Sale Price`)
+```
+
+    ## [1]        0 20500000
+
+The range is from 0 too 20500000
+
+``` r
+hist(ames$`Sale Price`)
+```
+
+![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+
 As a team, we found that:
 
 step 4 result)
